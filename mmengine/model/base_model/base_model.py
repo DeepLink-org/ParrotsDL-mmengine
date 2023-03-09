@@ -196,7 +196,8 @@ class BaseModel(BaseModule):
             kwargs['device'] = kwargs['device'].replace(
                 'npu', torch.npu.native_device)
 
-        device = torch._C._nn._parse_to(*args, **kwargs)[0]
+        # device = torch._C._nn._parse_to(*args, **kwargs)[0]
+        device = torch.device()
         if device is not None:
             self._set_device(torch.device(device))
         return super().to(*args, **kwargs)

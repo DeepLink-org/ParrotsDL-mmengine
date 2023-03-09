@@ -2,7 +2,7 @@
 from .optimizer import (OPTIM_WRAPPER_CONSTRUCTORS, OPTIMIZERS,
                         AmpOptimWrapper, ApexOptimWrapper,
                         DefaultOptimWrapperConstructor, OptimWrapper,
-                        OptimWrapperDict, ZeroRedundancyOptimizer,
+                        OptimWrapperDict,
                         build_optim_wrapper)
 # yapf: disable
 from .scheduler import (ConstantLR, ConstantMomentum, ConstantParamScheduler,
